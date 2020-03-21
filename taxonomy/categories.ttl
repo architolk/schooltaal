@@ -1,0 +1,46 @@
+@prefix begrip: <http://linkeddata.ordina.nl/schooltaal/begrip/id/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+
+begrip:Woord a skos:Concept;
+  rdfs:label "Woord";
+  skos:prefLabel "Woord";
+  skos:definition "Een woord is een aaneenschakeling van letters die samen een woord vormen";
+.
+
+begrip:Hakwoord a skos:Concept;
+  rdfs:label "Hakwoord";
+  skos:prefLabel "Hakwoord";
+  skos:altLabel "Categorie 1 woord";
+  skos:notation "01";
+  skos:definition "Een hakwoord is een woord dat je schrijft zoals je het hoort.";
+  skos:broader begrip:Woord;
+  foaf:depiction "cat01.png";
+  skos:example ex:zit, ex:stap, ex:wolk, ex:plant, ex:spreuk, ex:barst
+.
+ex:zit a skos:Concept; rdfs:label "zit".
+ex:stap a skos:Concept; rdfs:label "stap".
+ex:wolk a skos:Concept; rdfs:label "wolk".
+ex:plant a skos:Concept; rdfs:label "plant".
+ex:spreuk a skos:Concept; rdfs:label "spreuk".
+ex:barst a skos:Concept; rdfs:label "barst".
+
+begrip:Zingwoord a skos:Concept;
+  rdfs:label "Zingwoord";
+  skos:prefLabel "Zingwoord";
+  skos:altLabel "Categorie 2 woord";
+  skos:notation "02";
+  skos:definition "Een zingwoord is een woord met een NG klank";
+  skos:broader begrip:Woord;
+  skos:example ""
+.
+
+begrip:Luchtwoord a skos:Concept;
+  rdfs:label "Luchtwoord";
+  skos:prefLabel "Luchtwoord";
+  skos:altLabel "Categorie 3 woord";
+  skos:notation "03";
+  skos:definition "Een luchtwoord is een woord met een korte klank gevolgd door CH, zoals in 'lucht'.";
+  skos:scopeNote "Uitzonderingen: ligt, legt, zegt";
+.
