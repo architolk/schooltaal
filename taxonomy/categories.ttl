@@ -16,7 +16,7 @@ begrip:Hakwoord a skos:Concept;
   skos:notation "01";
   skos:definition "Een hakwoord is een woord dat je schrijft zoals je het hoort.";
   skos:broader begrip:Woord;
-  foaf:depiction "cat01.png";
+  foaf:depiction <https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat01.png>;
   skos:example ex:zit, ex:stap, ex:wolk, ex:plant, ex:spreuk, ex:barst
 .
 ex:zit a skos:Concept; rdfs:label "zit".
