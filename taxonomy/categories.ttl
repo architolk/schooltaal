@@ -1,5 +1,7 @@
 @prefix begrip: <http://linkeddata.ordina.nl/schooltaal/begrip/id/>.
+@prefix ex: <http://linkeddata.ordina.nl/schooltaal/woord/id/>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 
@@ -16,15 +18,15 @@ begrip:Hakwoord a skos:Concept;
   skos:notation "01";
   skos:definition "Een hakwoord is een woord dat je schrijft zoals je het hoort.";
   skos:broader begrip:Woord;
-  foaf:depiction <https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat01.png>;
+  foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat01.png";
   skos:example ex:zit, ex:stap, ex:wolk, ex:plant, ex:spreuk, ex:barst
 .
-ex:zit a skos:Concept; rdfs:label "zit".
-ex:stap a skos:Concept; rdfs:label "stap".
-ex:wolk a skos:Concept; rdfs:label "wolk".
-ex:plant a skos:Concept; rdfs:label "plant".
-ex:spreuk a skos:Concept; rdfs:label "spreuk".
-ex:barst a skos:Concept; rdfs:label "barst".
+ex:zit a skosxl:Label; rdfs:label "zit".
+ex:stap a skosxl:Label; rdfs:label "stap".
+ex:wolk a skosxl:Label; rdfs:label "wolk".
+ex:plant a skosxl:Label; rdfs:label "plant".
+ex:spreuk a skosxl:Label; rdfs:label "spreuk".
+ex:barst a skosxl:Label; rdfs:label "barst".
 
 begrip:Zingwoord a skos:Concept;
   rdfs:label "Zingwoord";
