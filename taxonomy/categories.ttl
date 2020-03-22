@@ -19,7 +19,7 @@ begrip:Hakwoord a skos:Concept;
   skos:definition "Een hakwoord is een woord dat je schrijft zoals je het hoort.";
   skos:broader begrip:Woord;
   foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat01.png";
-  skos:example ex:zit, ex:stap, ex:wolk, ex:plant, ex:spreuk, ex:barst
+  skos:example ex:zit, ex:stap, ex:wolk, ex:plant, ex:spreuk, ex:barst;
 .
 ex:zit a skosxl:Label; rdfs:label "zit".
 ex:stap a skosxl:Label; rdfs:label "stap".
@@ -36,7 +36,18 @@ begrip:Zingwoord a skos:Concept;
   skos:definition "Een zingwoord is een woord met een NG klank";
   skos:broader begrip:Woord;
   foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat02.png";
+  skos:example ex:engel, ex:koning, ex:stang, ex:hengsel, ex:mengen, ex:lengte, ex:belangrijk, ex:bangerik, ex:vangst, ex:tangetje;
 .
+ex:engel a skosxl:Label; rdfs:label "engel".
+ex:koning a skosxl:Label; rdfs:label "koning".
+ex:stang a skosxl:Label; rdfs:label "stang".
+ex:hengsel a skosxl:Label; rdfs:label "hengsel".
+ex:mengen a skosxl:Label; rdfs:label "mengen".
+ex:lengte a skosxl:Label; rdfs:label "lengte".
+ex:belangrijk a skosxl:Label; rdfs:label "belangrijk".
+ex:bangerik a skosxl:Label; rdfs:label "bangerik".
+ex:vangst a skosxl:Label; rdfs:label "vangst".
+ex:tangetje a skosxl:Label; rdfs:label "tangetje".
 
 begrip:Luchtwoord a skos:Concept;
   rdfs:label "Luchtwoord";
@@ -45,5 +56,23 @@ begrip:Luchtwoord a skos:Concept;
   skos:notation "03";
   skos:definition "Een luchtwoord is een woord met een korte klank gevolgd door CH, zoals in 'lucht'.";
   skos:scopeNote "Uitzonderingen: ligt, legt, zegt";
+  skos:broader begrip:Woord;
   foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat03.png";
+  skos:example ex:vlucht, ex:achter, ex:lichten, ex:zachtjes, ex:nacht, ex:bocht
+.
+ex:vlucht a skosxl:Label; rdfs:label "vlucht".
+ex:achter a skosxl:Label; rdfs:label "achter".
+ex:lichten a skosxl:Label; rdfs:label "lichten".
+ex:zachtjes a skosxl:Label; rdfs:label "zachtjes".
+ex:nacht a skosxl:Label; rdfs:label "nacht".
+ex:bocht a skosxl:Label; rdfs:label "bocht".
+
+begrip:Plankwoord a skos:Concept;
+  rdfs:label "Plankwoord";
+  skos:prefLabel "Plankwoord";
+  skos:altLabel "Categorie 4 woord";
+  skos:notation "04";
+  skos:definition "Een plankwoord is een woord met een NK klank die je uitspreekt met een G, zonder dat er een G tussen zit";
+  skos:broader begrip:Woord;
+  foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat04.png";
 .

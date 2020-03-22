@@ -3,9 +3,16 @@
 @prefix html: <http://www.w3.org/1999/xhtml/vocab#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix containerlocal: <http://localhost:8080/schooltaal/container/>.
+@prefix container: <http://linkeddata.ordina.nl/schooltaal/container/>.
 
 #Container for upload data
 containerlocal:data a elmo:Container;
+  rdfs:label "Upload data";
+  elmo:contains stage:Menu;
+  elmo:representation elmo:UploadRepresentation;
+  elmo:replaces container:data
+.
+container:data a elmo:Container;
   rdfs:label "Upload data";
   elmo:contains stage:Menu;
   elmo:representation elmo:UploadRepresentation;

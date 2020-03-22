@@ -103,25 +103,54 @@ stage:Concept_graph a elmo:Part;
 		PREFIX skosxl: <http://www.w3.org/2008/05/skos-xl>
 		PREFIX elmo: <http://bp4mc2.org/elmo/def#>
 		CONSTRUCT {
+			<@SUBJECT@> a ?style.
 			<@SUBJECT@> rdfs:label ?slabel.
-			<@SUBJECT@> ?p ?o.
 			<@SUBJECT@> elmo:style ?style.
+			<@SUBJECT@> html:img ?img.
+			<@SUBJECT@> ?p ?o.
+			?o a ?ostyle.
 			?o rdfs:label ?olabel.
 			?o elmo:style ?ostyle.
-			<@SUBJECT@> html:img ?img.
+			?o html:img ?oimg.
+			?s ?sp <@SUBJECT@>.
+			?s a ?sstyle.
+			?s rdfs:label ?slabel.
+			?s elmo:style ?sstyle.
+			?s html:img ?simg.
 			skos:example rdfs:label "voorbeeld".
 			skos:broader rdfs:label "is een".
 			skos:Concept elmo:name "Begrip".
 			skosxl:Label elmo:name "Woord".
 		}
 		WHERE {
-			<@SUBJECT@> rdfs:label ?slabel.
-			<@SUBJECT@> ?p ?o.
-			<@SUBJECT@> a ?style.
-			?o rdfs:label ?olabel.
-			?o a ?ostyle.
-			OPTIONAL {
-				<@SUBJECT@> foaf:depiction ?img
+			graph <http://linkeddata.ordina.nl/schooltaal/container/data> {
+				{
+					<@SUBJECT@> rdfs:label ?slabel.
+					<@SUBJECT@> a ?style.
+					OPTIONAL {
+						<@SUBJECT@> foaf:depiction ?img
+					}
+				}
+				UNION
+				{
+					<@SUBJECT@> ?p ?o.
+					FILTER (?p = skos:example || ?p = skos:broader)
+					?o rdfs:label ?olabel.
+					?o a ?ostyle.
+					OPTIONAL {
+						?o foaf:depiction ?oimg
+					}
+				}
+				UNION
+				{
+					?s ?sp <@SUBJECT@>
+					FILTER (?sp = skos:example || ?sp = skos:broader)
+					?s rdfs:label ?slabel.
+					?s a ?sstyle.
+					OPTIONAL {
+						?s foaf:depiction ?simg
+					}
+				}
 			}
 		}
 	'''
