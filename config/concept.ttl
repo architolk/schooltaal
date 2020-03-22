@@ -85,6 +85,11 @@ stage:Concept_content a elmo:Part;
 		rdfs:label "Gerelateerd aan";
 		elmo:index "08";
 	];
+	elmo:fragment [
+		elmo:applies-to skos:related;
+		rdfs:label "Zie ook";
+		elmo:index "09";
+	];
 	elmo:query '''
 		CONSTRUCT {
 			<@SUBJECT@> ?p ?o.
@@ -144,6 +149,7 @@ stage:Concept_graph a elmo:Part;
 			skos:broader rdfs:label "is een".
 			skos:related rdfs:label "gerelateerd aan".
 			skosthes:broaderPartitive rdfs:label "onderdeel van".
+			rdfs:seeAlso rdfs:label "zie ook".
 			skos:Concept elmo:name "Begrip".
 			skosxl:Label elmo:name "Woord".
 		}
@@ -159,7 +165,7 @@ stage:Concept_graph a elmo:Part;
 				UNION
 				{
 					<@SUBJECT@> ?p ?o.
-					FILTER (?p = skos:example || ?p = skos:broader || ?p = skos:related || ?p = skosthes:broaderPartitive)
+					FILTER (?p = skos:example || ?p = skos:broader || ?p = skos:related || ?p = skosthes:broaderPartitive || ?p = rdfs:seeAlso)
 					?o rdfs:label ?olabel.
 					?o a ?ostyle.
 					OPTIONAL {
@@ -169,7 +175,7 @@ stage:Concept_graph a elmo:Part;
 				UNION
 				{
 					?s ?sp <@SUBJECT@>
-					FILTER (?sp = skos:example || ?sp = skos:broader || ?sp = skos:related || ?sp = skosthes:broaderPartitive)
+					FILTER (?sp = skos:example || ?sp = skos:broader || ?sp = skos:related || ?sp = skosthes:broaderPartitive || ?p = rdfs:seeAlso)
 					?s rdfs:label ?slabel.
 					?s a ?sstyle.
 					OPTIONAL {

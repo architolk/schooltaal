@@ -161,7 +161,7 @@ begrip:Klankgroepenwoord a skos:Concept;
   skos:broader begrip:Woord;
   skos:related begrip:Klankgroep;
   foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat10.png";
-  skos:example ex:molen, ex:korrel, ex:buiten;
+  skos:example ex:molen, ex:korrel, ex:buiten, ex:kasteel;
 .
 begrip:LangeKlankgroepenwoord a skos:Concept;
   rdfs:label "Lange klank-groepenwoord";
@@ -214,4 +214,268 @@ begrip:Klankgroep a skos:Concept;
   skos:scopeNote "Bij klankgroepen gaat het om een verdeling van een woord zoals je het hoort. Bijvoorbeeld als je het zegt terwijl je klapt of als je het zingt.";
   skosthes:broaderPartitive begrip:Woord;
   dcterms:source <https://taalkanjer.nl/lezen-en-spelling-kennisbank/lees-en-spellingbegrippen/klankgroep>
+.
+
+begrip:Verkleinwoorden a skos:Concept;
+  rdfs:label "Verkleinwoord";
+  skos:prefLabel "Verkleinwoord";
+  skos:altLabel "Categorie 11 woord";
+  skos:notation "11";
+  skos:definition "Een verkleinwoord is een woord waarmee je aangeeft dat iets klein is";
+  skos:scopeNote "Bij een verkleinwoord hoor je op het eind JE, TJE of PJE";
+  skos:broader begrip:Woord;
+  foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat11.png";
+  skos:example ex:buiginkje
+.
+
+begrip:Achtervoegsel a skos:Concept;
+  rdfs:label "Achtervoegsel";
+  skos:prefLabel "Achtervoegsel";
+  skos:altLabel "Categorie 12 woord";
+  skos:notation "12";
+  skos:definition "Een achtervoegsel is een woord waarbij je op het eind -UG of -LUK hoort, maar -IG of -LIJK schrijft";
+  skos:broader begrip:Woord;
+  foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat12.png";
+.
+
+begrip:Kilowoord a skos:Concept;
+  rdfs:label "Kilowoord";
+  skos:prefLabel "Kilowoord";
+  skos:altLabel "Categorie 13 woord";
+  skos:notation "13";
+  skos:definition "Een kilowoord is een woord waarbij je een IE hoort, maar een I schrijft";
+  skos:broader begrip:Woord;
+  foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat13.png";
+.
+
+begrip:KommaSWoord a skos:Concept;
+  rdfs:label "Komma-s-woord";
+  skos:prefLabel "Komma-s-woord";
+  skos:altLabel "Categorie 14 woord";
+  skos:notation "14";
+  skos:definition "Een komma-s-woord is een woord dat begint met 's. Je hoort alleen de S";
+  skos:broader begrip:Woord;
+  foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat14.png";
+  skos:example ex:sochtends;
+.
+ex:sochtends a skosxl:Label; rdfs:label "'s ochtends".
+
+begrip:Centwoord a skos:Concept;
+  rdfs:label "Centwoord";
+  skos:prefLabel "Centwoord";
+  skos:altLabel "Categorie 15 woord";
+  skos:notation "15";
+  skos:definition "Een Centwoord is een woord waarbij je een S hoort, maar een C schrijft";
+  skos:broader begrip:Woord;
+  foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat15.png";
+.
+
+begrip:KommaSMeervoud a skos:Concept;
+  rdfs:label "Komma-s-meervoud";
+  skos:prefLabel "Komma-s-meervoud";
+  skos:altLabel "Categorie 16 woord";
+  skos:notation "16";
+  skos:definition "Een komma-s-meervoud is een woord in meervoudsvorm die eindigt op een S met daarvoor een lange klank, een I of een Y";
+  skos:scopeNote "Uitzondering is de lange klank EE: dan schrijf je het zoals je het hoort.";
+  skos:broader begrip:Woord;
+  rdfs:seeAlso begrip:Cola-woord;
+  foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat16.png";
+.
+
+begrip:Politiewoord a skos:Concept;
+  rdfs:label "Politiewoord";
+  skos:prefLabel "Politiewoord";
+  skos:altLabel "Categorie 17 woord";
+  skos:notation "17";
+  skos:definition "Een politiewoord is een woord waarbij je TSIE hoort en TIE schrijft: de S verdwijnt";
+  skos:broader begrip:Woord;
+  foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat17.png";
+.
+
+begrip:ColaWoord a skos:Concept;
+  rdfs:label "Cola-woord";
+  skos:prefLabel "Cola-woord";
+  skos:altLabel "Categorie 18 woord";
+  skos:notation "18";
+  skos:definition "Een cola-woord is een woord waarbij je een K hoort, maar een C schrijft";
+  skos:broader begrip:Woord;
+  rdfs:seeAlso begrip:Centwoord;
+  foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat18.png";
+.
+
+begrip:TropischWoord a skos:Concept;
+  rdfs:label "Tropisch-woord";
+  skos:prefLabel "Tropisch-woord";
+  skos:altLabel "Categorie 19 woord";
+  skos:notation "19";
+  skos:definition "Een tropisch-woord is een woord waarbij je IES hoort, maar ISCH schrijft";
+  skos:broader begrip:Woord;
+  foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat19.png";
+.
+
+begrip:TaxiWoord a skos:Concept;
+  rdfs:label "Taxi-woord";
+  skos:prefLabel "Taxi-woord";
+  skos:altLabel "Categorie 20 woord";
+  skos:notation "20";
+  skos:definition "Een taxi-woord is een woord waarbij je KS hoort, maar een X schrijft";
+  skos:broader begrip:Woord;
+  foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat20.png";
+.
+
+begrip:ChefWoord a skos:Concept;
+  rdfs:label "Chef-woord";
+  skos:prefLabel "Chef-woord";
+  skos:altLabel "Categorie 21 woord";
+  skos:notation "21";
+  skos:definition "Een chef-woord is een woord waarbij je SJ hoort, maar CH schrijft";
+  skos:broader begrip:Woord;
+  foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat21.png";
+.
+
+begrip:TheeWoord a skos:Concept;
+  rdfs:label "Thee-woord";
+  skos:prefLabel "Thee-woord";
+  skos:altLabel "Categorie 22 woord";
+  skos:notation "22";
+  skos:definition "Een thee-woord is een woord waarbij je een T hoort, maar TH schrijft";
+  skos:broader begrip:Woord;
+  foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat22.png";
+.
+
+begrip:CafeWoord a skos:Concept;
+  rdfs:label "Café-woord";
+  skos:prefLabel "Café-woord";
+  skos:altLabel "Categorie 23 woord";
+  skos:notation "23";
+  skos:definition "Een café-woord is een woord waar je een lange EE klank hoort en die je schrijft als een E met een streepje op de é";
+  skos:broader begrip:Woord;
+  foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat23.png";
+.
+
+begrip:CadeauWoord a skos:Concept;
+  rdfs:label "Cadeau-woord";
+  skos:prefLabel "Cadeau-woord";
+  skos:altLabel "Categorie 24 woord";
+  skos:notation "24";
+  skos:definition "Een cadeau-woord is een woord waar je een OO hoort, maar een EAU schrijft";
+  skos:broader begrip:Woord;
+  foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat24.png";
+.
+
+begrip:RouteWoord a skos:Concept;
+  rdfs:label "Route-woord";
+  skos:prefLabel "Route-woord";
+  skos:altLabel "Categorie 25 woord";
+  skos:notation "25";
+  skos:definition "Een route-woord is een woord waar je een OE hoort, maar een OU schrijft";
+  skos:broader begrip:Woord;
+  foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat25.png";
+.
+
+begrip:GarageWoord a skos:Concept;
+  rdfs:label "Garage-woord";
+  skos:prefLabel "Garage-woord";
+  skos:altLabel "Categorie 26 woord";
+  skos:notation "26";
+  skos:definition "Een garage-woord is een woord waar je ZJ hoort, maar een G schrijft";
+  skos:broader begrip:Woord;
+  foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat26.png";
+.
+
+begrip:LollyWoord a skos:Concept;
+  rdfs:label "Lolly-woord";
+  skos:prefLabel "Lolly-woord";
+  skos:altLabel "Categorie 27 woord";
+  skos:notation "27";
+  skos:definition "Een lolly-woord is een woord waar je een IE hoort, maar een griekse Y schrijft";
+  skos:broader begrip:Woord;
+  foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat27.png";
+.
+
+begrip:TremaWoord a skos:Concept;
+  rdfs:label "Trema-woord";
+  skos:prefLabel "Trema-woord";
+  skos:altLabel "Categorie 28 woord";
+  skos:notation "28";
+  skos:definition "Een trema-woord is een bijzonder klankgroepenwoord waarbij de eerste klank eindigt op een klinkerklank en de tweede klank begint met een klinkerklank.";
+  skos:scopeNote "Op de tweede klinkerklank komt een trema op de eerste klinker om te voorkomen dat je een tweeklinkerklank schrijft";
+  skos:broader begrip:Klankgroepenwoord;
+  rdfs:seeAlso begrip:Tweeklinkerklank;
+  foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat28.png";
+.
+
+begrip:MilitairWoord a skos:Concept;
+  rdfs:label "Militair-woord";
+  skos:prefLabel "Militair-woord";
+  skos:altLabel "Categorie 29 woord";
+  skos:notation "29";
+  skos:definition "Een militair-woord is een woord waarbij je lang klank hoort die lijkt op ER en schrijft als AIR";
+  skos:scopeNote "Een militair-woord is nooit een trema-woord (zoals bij familiair)";
+  rdfs:seeAlso begrip:TremaWoord;
+  skos:broader begrip:Woord;
+  foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat29.png";
+.
+
+begrip:Koppeltekenwoord a skos:Concept;
+  rdfs:label "Koppeltekenwoord";
+  skos:prefLabel "Koppeltekenwoord";
+  skos:altLabel "Categorie 30 woord";
+  skos:notation "30";
+  skos:definition "Een koppeltekenwoord is een woord dat bestaat uit twee losse woorden die met een koppelteken met elkaar zijn verbonden";
+  skos:broader begrip:Woord;
+  foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat30.png";
+.
+
+begrip:TrottoirWoord a skos:Concept;
+  rdfs:label "Trottoir-woord";
+  skos:prefLabel "Trottoir-woord";
+  skos:altLabel "Categorie 31 woord";
+  skos:notation "31";
+  skos:definition "Een trottoir-woord is een woord waarbij je een OE-AA-R klank hoort en schrijft als OIR";
+  skos:broader begrip:Woord;
+  foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat31.png";
+.
+
+begrip:TussenEenENWoord a skos:Concept;
+  rdfs:label "Tussen-E-en-EN-woord";
+  skos:prefLabel "Tussen-E-en-EN-woord";
+  skos:altLabel "Categorie 32 woord";
+  skos:notation "32";
+  skos:definition "Een tussen-E-en-EN-woord is een woord dat bestaat uit twee losse woorden die met een E of EN met elkaar zijn verbonden";
+  skos:broader begrip:Woord;
+  foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat32.png";
+  skos:example ex:apetrots, ex:elleboog, ex:prentenboek, ex:snottebel, ex:prullenbak, ex:poppenhuis, ex:grenzeloos, ex:zonnebloem, ex:pannenkoek, ex:beresterk;
+.
+ex:apetrots a skosxl:Label; rdfs:label "apetrots".
+ex:elleboog a skosxl:Label; rdfs:label "elleboog".
+ex:prentenboek a skosxl:Label; rdfs:label "prentenboek".
+ex:snottebel a skosxl:Label; rdfs:label "snottebel".
+ex:prullenbak a skosxl:Label; rdfs:label "prullenbak".
+ex:poppenhuis a skosxl:Label; rdfs:label "poppenhuis".
+ex:grenzeloos a skosxl:Label; rdfs:label "grenzeloos".
+ex:zonnebloem a skosxl:Label; rdfs:label "zonnebloem".
+ex:pannenkoek a skosxl:Label; rdfs:label "pannenkoek".
+ex:beresterk a skosxl:Label; rdfs:label "beresterk".
+
+begrip:TremaMeervoud a skos:Concept;
+  rdfs:label "Trema-meervoud";
+  skos:prefLabel "Trema-meervoud";
+  skos:altLabel "Categorie 33 woord";
+  skos:notation "33";
+  skos:definition "Een trema-meervoud is een woord in meervoud dat eindigt op EN met een trema op de ën";
+  skos:scopeNote "Het gaat om woorden die in enkelvoud eindigen op EE of IE. Uitzonderingen zijn bacteriën, koloniën, oliën, poriën en financiën";
+  skos:broader begrip:Woord;
+  foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat33.png";
+.
+
+begrip:LatijnsVoorvoegsel a skos:Concept;
+  rdfs:label "Latijns voorvoegsel";
+  skos:prefLabel "Latijns voorvoegsel";
+  skos:altLabel "Categorie 34 woord";
+  skos:notation "34";
+  skos:definition "Een latijns voorvoegsel is een woord dat begint met een latijns voorvoegsel: AD-, SUB-, OB-, AB-";
+  skos:scopeNote "Je hoort AT-, SUP-, OP- of AP-, maar schrijft juist met een D of B";
+  skos:broader begrip:Woord;
+  foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat34.png";
 .
