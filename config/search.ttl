@@ -9,23 +9,29 @@ stage:Search	a	elmo:Representation;
 	elmo:fragment [
     elmo:applies-to "type";
     rdfs:label "Type";
-    elmo:name "SUBJECT";
   ];
   elmo:fragment [
     elmo:applies-to "s";
     rdfs:label "Zoekresultaat";
-    elmo:name "SUBJECT";
+    elmo:name "S";
+  ];
+	elmo:fragment [
+    elmo:applies-to "def";
+    rdfs:label "Uitleg";
   ];
 	elmo:fragment [
     elmo:applies-to "search";
     rdfs:label "Zoekvraag";
   ];
 	elmo:query '''
-		select ?type ?s ?s_label ("@TERM@" as ?search)
+		select ?type ?s ?s_label ?def ("@TERM@" as ?search)
 		where {
 			graph <http://linkeddata.ordina.nl/schooltaal/container/data> {
 				?s a ?type.
 				?s rdfs:label ?s_label.
+				OPTIONAL {
+					?s skos:definition ?def
+				}
 				FILTER regex(?s_label,"@TERM@","i")
       }
 		}

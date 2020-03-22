@@ -2,6 +2,8 @@
 @prefix ex: <http://linkeddata.ordina.nl/schooltaal/woord/id/>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix skosxl: <http://www.w3.org/2008/05/skos-xl#>.
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 
@@ -75,4 +77,141 @@ begrip:Plankwoord a skos:Concept;
   skos:definition "Een plankwoord is een woord met een NK klank die je uitspreekt als NGK, zonder dat je er een G tussen schrijft";
   skos:broader begrip:Woord;
   foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat04.png";
+  skos:example ex:bank, ex:stinken, ex:enkel, ex:klinker, ex:dankuwel, ex:denk, ex:buiginkje, ex:kronkel, ex:vonk;
+.
+ ex:bank a skosxl:Label; rdfs:label "bank".
+ ex:stinken a skosxl:Label; rdfs:label "stinken".
+ ex:enkel a skosxl:Label; rdfs:label "enkel".
+ ex:klinker a skosxl:Label; rdfs:label "klinker".
+ ex:dankuwel a skosxl:Label; rdfs:label "dankuwel".
+ ex:denk a skosxl:Label; rdfs:label "denk".
+ ex:buiginkje a skosxl:Label; rdfs:label "buiginkje".
+ ex:kronkel a skosxl:Label; rdfs:label "kronkel".
+ ex:vonk a skosxl:Label; rdfs:label "vonk".
+
+begrip:EerOorEurWoord a skos:Concept;
+  rdfs:label "eer-oor-eur-Woord";
+  skos:prefLabel "eer-oor-eur-Woord";
+  skos:altLabel "Categorie 5 woord";
+  skos:notation "05";
+  skos:definition "Een eer-oor-eur-woord is een woord dat je schrijft met ee(r), oo(r), eur(r) of ee(l)";
+  skos:broader begrip:Woord;
+  foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat05.png";
+.
+
+begrip:AaiOoiOeiWoord a skos:Concept;
+  rdfs:label "aai-ooi-oei-Woord";
+  skos:prefLabel "aai-ooi-oei-Woord";
+  skos:altLabel "Categorie 6 woord";
+  skos:notation "06";
+  skos:definition "Een aai-ooi-oei-woord is een woord waarin je een J hoort, terwijl je een I schrijft";
+  skos:broader begrip:Woord;
+  foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat06.png";
+.
+
+begrip:EeuwIeuwWoord a skos:Concept;
+  rdfs:label "eeuw-ieuw-Woord";
+  skos:prefLabel "eeuw-ieuw-Woord";
+  skos:altLabel "Categorie 7 woord";
+  skos:notation "07";
+  skos:definition "Een eeuw-ieuw-Woord id een woord met een EE of IE klank met daarna een W en je een U voor de W schrijft";
+  skos:broader begrip:Woord;
+  foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat07.png";
+.
+
+begrip:LangermaakWoord a skos:Concept;
+  rdfs:label "Langermaak-woord";
+  skos:prefLabel "Langermaak-woord";
+  skos:altLabel "Categorie 8 woord";
+  skos:notation "08";
+  skos:definition "Een langermaak-woord is een woord waarbij je op het eind T hoort, en die je langer maakt om te horen of je een T of D schrijft";
+  skos:scopeNote "Langermaken kan door er EN achter te plakken: het meervoud. Ook woorden waarbij je een P hoort, kun je zo langer maken om er achter te komen of je een P of B schrijft";
+  skos:broader begrip:Woord;
+  foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat08.png";
+.
+begrip:DTLangermaakWoord a skos:Concept;
+  rdfs:label "DT-Langermaak-woord";
+  skos:prefLabel "DT-Langermaak-woord";
+  skos:definition" Een DT-Langermaak-woord is een langermaak-woord waarbij je op het eind een T hoort";
+  skos:broader begrip:LangermaakWoord;
+.
+begrip:BPLangermaakWoord a skos:Concept;
+  rdfs:label "BP-Langermaak-woord";
+  skos:definition "Een BP-Langermaak-woord is een langermaak-woord waarbij je op het eind een P hoort";
+  skos:broader begrip:LangermaakWoord;
+.
+
+begrip:Voorvoegsel a skos:Concept;
+  rdfs:label "Voorvoegsel";
+  skos:prefLabel "Voorvoegsel";
+  skos:altLabel "Categorie 9 woord";
+  skos:notation "09";
+  skos:definition "Een voorvoegsel is een woord waarbij je aan het begin een U hoort, maar een E schrijft: GE-, BE-, VER-";
+  skos:scopeNote "De U is een korte klank, en spreek je uit zoals in BUS";
+  skos:broader begrip:Woord;
+  foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat09.png";
+.
+
+begrip:Klankgroepenwoord a skos:Concept;
+  rdfs:label "Klankgroepenwoord";
+  skos:prefLabel "Klankgroepenwoord";
+  skos:altLabel "Categorie 10 woord";
+  skos:notation "10";
+  skos:definition "Een klankgroepenwoord is een woord dat je in klankgroepen verdeelt om te zien hoe je het schrijft.";
+  skos:broader begrip:Woord;
+  skos:related begrip:Klankgroep;
+  foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat10.png";
+  skos:example ex:molen, ex:korrel, ex:buiten;
+.
+begrip:LangeKlankgroepenwoord a skos:Concept;
+  rdfs:label "Lange klank-groepenwoord";
+  rdfs:prefLabel "Lange klank";
+  skos:definition "Een lange klank-groepenwoord is een klankgroepenwoord met een lange klank";
+  skos:scopeNote "Bij een lange klank haal je er eentje weg als je hem schrijft: OO wordt O, EE, wordt E, UU wordt U";
+  skos:broader begrip:Klankgroepenwoord;
+  skos:example ex:molen;
+.
+ex:molen a skosxl:Label; rdfs:label "molen".
+begrip:KorteKlankgroepenwoord a skos:Concept;
+  rdfs:label "Korte klank-groepenwoord";
+  rdfs:prefLabel "Korte klank";
+  skos:definition "Een korte klank-groepenwoord is een klankgroepenwoord met een korte klank";
+  skos:scopeNote "Bij een korte klank krijg je er een medeklinker bij, zoals in KOR-REL";
+  skos:broader begrip:Klankgroepenwoord;
+  skos:example ex:korrel;
+.
+ex:korrel a skosxl:Label; rdfs:label "korrel".
+begrip:TweetekenklankGroepenwoord a skos:Concept;
+  rdfs:label "Tweetekenklank-groepenwoord";
+  rdfs:prefLabel "Tweetekenklank";
+  skos:definition "Een tweetekenklank-groepenwoord is een klankgroepenwoord waarbij je een tweetekenklank hoort";
+  skos:scopeNote "Een tweetekenklank schrijf je zoals je het hoort, zoals in BUI-TEN";
+  skos:broader begrip:Klankgroepenwoord;
+  skos:related begrip:Tweetekenklank;
+  skos:example ex:buiten;
+.
+ex:buiten a skosxl:Label; rdfs:label "buiten".
+begrip:MedeklinkerKlankgroepenwoord a skos:Concept;
+  rdfs:label "Medeklinker-klankgroepenwoord";
+  rdfs:prefLabel "Medeklinker";
+  skos:definition "Een medeklinker-klankgroepenwoord is een klankgroepenwoord waarbij je een medeklinker hoort";
+  skos:scopeNote "Een medeklinker schrijf je zoals je het hoort, zoals in KAS-TEEL";
+  skos:broader begrip:Klankgroepenwoord;
+  skos:example ex:kasteel;
+.
+ex:kasteel a skosxl:Label; rdfs:label "kasteel".
+begrip:Tweetekenklank a skos:Concept;
+  rdfs:label "Tweetekenklank";
+  skos:prefLabel "Tweetekenklank";
+  skos:definition "Een tweetekenklank is een samentrekking van twee klinkers die zo een nieuwe klank vormen.";
+  dcterms:source <https://wikikids.nl/Tweetekenklank>;
+.
+begrip:Klankgroep a skos:Concept;
+  rdfs:label "Klankgroep";
+  skos:prefLabel "Klankgroep";
+  skos:altLabel "Klankmaat";
+  skos:definition "Een klankgroep is een deel van een gesproken woord dat bestaat uit een klinkerklank met vaak daaromheen een of meer medeklinkerklanken";
+  skos:scopeNote "Bij klankgroepen gaat het om een verdeling van een woord zoals je het hoort. Bijvoorbeeld als je het zegt terwijl je klapt of als je het zingt.";
+  skosthes:broaderPartitive begrip:Woord;
+  dcterms:source <https://taalkanjer.nl/lezen-en-spelling-kennisbank/lees-en-spellingbegrippen/klankgroep>
 .

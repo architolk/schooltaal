@@ -32,8 +32,22 @@ stage:Welkom a elmo:Part;
 			<div>
 				<h2>Schooltaal voor ICT ouders</h2>
 				<p>Waar hebben die kinderen het toch over? Wat is in hemelsnaam een <a href="/schooltaal/begrip/id/Hakwoord">hakwoord</a>? En wat is nu een <a href="/schooltaal/begrip/id/Luchtwoord">categorie 3</a> woord?</p>
-				<p>Dat dachten wij ouders van het Ordina Semantic Data Management expertisecentrum ook. Hoe handig zou het zijn om onze eigen aanpak hierop los te laten? Want juist Semantic Data Management gaat over de betekenis van woorden!</p>
+				<p>Dat dachten wij ouders van <a href="https://www.ordina.nl/diensten/semantic-data-management">Ordina Semantic Data Management</a> ook. Hoe handig zou het zijn om onze eigen aanpak hierop los te laten? Want juist <a href="https://www.ordina.nl/diensten/semantic-data-management">Semantic Data Management</a> gaat over de betekenis van woorden!</p>
 				<p>Daarom deze site. Hier kunt u alles vinden waar uw kinderen het over hebben.</p>
+				<div class="alert alert-info" role="alert">
+
+					<form style="display:block;" method="get" action="/schooltaal/query/search">
+						<label for="zoeken">Klik op <a href="/schooltaal/query/categories">Categoriën</a>, of gebruik de zoekfunctie:</label>
+						<div class="input-group" style="max-width: 300px">
+							<input id="zoeken" class="form-control" type="text" placeholder="Zoek een woord" name="term"/>
+							<span class="input-group-btn">
+								<button class="btn btn-primary" type="submit">
+									<span class="glyphicon glyphicon-search"></span>
+								</button>
+							</span>
+						</div>
+					</form>
+				</div>
 				<p>Ten minste... Onze aanpak is agile, dus mogelijk staat er een woord nog niet tussen. Maar als u naar dit woord zoekt, dan zullen wij dit zien en gaan we op zoek naar de betekenis van het woord dat uw kind gebruikt en u graag de betekenis wilt weten!</p>
 				<p>Als u een ICTer bent en geïnteresseerd in het model achter deze website, <a href="/schooltaal/query/taxonomy">hier</a> kunt u het SKOS begrippenkader model vinden.</p>
  			</div>''';

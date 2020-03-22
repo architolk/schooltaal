@@ -5,6 +5,8 @@
 @prefix html: <http://www.w3.org/1999/xhtml/vocab#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix skosxl: <http://www.w3.org/2008/05/skos-xl#>.
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 
 stage:Concept	a	elmo:Representation;
@@ -63,9 +65,25 @@ stage:Concept_content a elmo:Part;
 		elmo:index "04";
 	];
 	elmo:fragment [
+		elmo:applies-to dcterms:source;
+		elmo:appearance elmo:GlobalLink;
+		rdfs:label "Bron";
+		elmo:index "05";
+	];
+	elmo:fragment [
 		elmo:applies-to skos:broader;
 		rdfs:label "Algemener begrip";
-		elmo:index "05";
+		elmo:index "06";
+	];
+	elmo:fragment [
+		elmo:applies-to skosthes:broaderPartitive;
+		rdfs:label "Onderdeel van";
+		elmo:index "07";
+	];
+	elmo:fragment [
+		elmo:applies-to skos:related;
+		rdfs:label "Gerelateerd aan";
+		elmo:index "08";
 	];
 	elmo:query '''
 		CONSTRUCT {
@@ -105,6 +123,7 @@ stage:Concept_graph a elmo:Part;
 	elmo:query '''
 		PREFIX html: <http://www.w3.org/1999/xhtml/vocab#>
 		PREFIX skosxl: <http://www.w3.org/2008/05/skos-xl#>
+		PREFIX skosthes: <http://purl.org/iso25964/skos-thes#>
 		PREFIX elmo: <http://bp4mc2.org/elmo/def#>
 		CONSTRUCT {
 			<@SUBJECT@> a ?style.
@@ -123,6 +142,8 @@ stage:Concept_graph a elmo:Part;
 			?s html:img ?simg.
 			skos:example rdfs:label "voorbeeld".
 			skos:broader rdfs:label "is een".
+			skos:related rdfs:label "gerelateerd aan".
+			skosthes:broaderPartitive rdfs:label "onderdeel van".
 			skos:Concept elmo:name "Begrip".
 			skosxl:Label elmo:name "Woord".
 		}
@@ -138,7 +159,7 @@ stage:Concept_graph a elmo:Part;
 				UNION
 				{
 					<@SUBJECT@> ?p ?o.
-					FILTER (?p = skos:example || ?p = skos:broader)
+					FILTER (?p = skos:example || ?p = skos:broader || ?p = skos:related || ?p = skosthes:broaderPartitive)
 					?o rdfs:label ?olabel.
 					?o a ?ostyle.
 					OPTIONAL {
@@ -148,7 +169,7 @@ stage:Concept_graph a elmo:Part;
 				UNION
 				{
 					?s ?sp <@SUBJECT@>
-					FILTER (?sp = skos:example || ?sp = skos:broader)
+					FILTER (?sp = skos:example || ?sp = skos:broader || ?sp = skos:related || ?sp = skosthes:broaderPartitive)
 					?s rdfs:label ?slabel.
 					?s a ?sstyle.
 					OPTIONAL {
