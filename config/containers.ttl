@@ -1,9 +1,9 @@
 @prefix stage: <http://localhost:8080/schooltaal/stage#>.
-@prefix elmo: <http://bp4mc2.org/elmo/def#>.
-@prefix html: <http://www.w3.org/1999/xhtml/vocab#>.
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix containerlocal: <http://localhost:8080/schooltaal/container/>.
 @prefix container: <http://linkeddata.ordina.nl/schooltaal/container/>.
+
+@prefix elmo: <http://bp4mc2.org/elmo/def#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 
 #Container for upload data
 containerlocal:data a elmo:Container;

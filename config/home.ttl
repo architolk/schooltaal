@@ -1,10 +1,8 @@
-@prefix elmo: <http://bp4mc2.org/elmo/def#>.
-@prefix html: <http://www.w3.org/1999/xhtml/vocab#>.
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
-@prefix dcterms: <http://purl.org/dc/terms/>.
-@prefix void: <http://rdfs.org/ns/void#>.
-@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
 @prefix stage: <http://localhost:8080/schooltaal/stage#>.
+
+@prefix elmo: <http://bp4mc2.org/elmo/def#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix html: <http://www.w3.org/1999/xhtml/vocab#>.
 
 stage:Home	a	elmo:Representation;
 	elmo:url-pattern	"/schooltaal(|/|\\..+)$";
@@ -37,6 +35,7 @@ stage:Welkom a elmo:Part;
 				<p>Dat dachten wij ouders van het Ordina Semantic Data Management expertisecentrum ook. Hoe handig zou het zijn om onze eigen aanpak hierop los te laten? Want juist Semantic Data Management gaat over de betekenis van woorden!</p>
 				<p>Daarom deze site. Hier kunt u alles vinden waar uw kinderen het over hebben.</p>
 				<p>Ten minste... Onze aanpak is agile, dus mogelijk staat er een woord nog niet tussen. Maar als u naar dit woord zoekt, dan zullen wij dit zien en gaan we op zoek naar de betekenis van het woord dat uw kind gebruikt en u graag de betekenis wilt weten!</p>
+				<p>Als u een ICTer bent en geïnteresseerd in het model achter deze website, <a href="/schooltaal/query/taxonomy">hier</a> kunt u het SKOS begrippenkader model vinden.</p>
  			</div>''';
 	]
 .

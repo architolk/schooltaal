@@ -1,16 +1,20 @@
-@prefix elmo: <http://bp4mc2.org/elmo/def#>.
-@prefix html: <http://www.w3.org/1999/xhtml/vocab#>.
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
-@prefix dcterms: <http://purl.org/dc/terms/>.
-@prefix void: <http://rdfs.org/ns/void#>.
-@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
-@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
-@prefix skosxl: <http://www.w3.org/2008/05/skos-xl>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix stage: <http://localhost:8080/schooltaal/stage#>.
+
+@prefix elmo: <http://bp4mc2.org/elmo/def#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix html: <http://www.w3.org/1999/xhtml/vocab#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
 
 stage:Concept	a	elmo:Representation;
 	elmo:applies-to [rdf:type skos:Concept];
+	elmo:contains	stage:Menu;
+	elmo:contains stage:Concept_content;
+	elmo:contains stage:Concept_graph;
+.
+stage:Label a elmo:Representation;
+	elmo:applies-to [rdf:type skosxl:Label];
 	elmo:contains	stage:Menu;
 	elmo:contains stage:Concept_content;
 	elmo:contains stage:Concept_graph;
@@ -100,11 +104,11 @@ stage:Concept_graph a elmo:Part;
 	];
 	elmo:query '''
 		PREFIX html: <http://www.w3.org/1999/xhtml/vocab#>
-		PREFIX skosxl: <http://www.w3.org/2008/05/skos-xl>
+		PREFIX skosxl: <http://www.w3.org/2008/05/skos-xl#>
 		PREFIX elmo: <http://bp4mc2.org/elmo/def#>
 		CONSTRUCT {
 			<@SUBJECT@> a ?style.
-			<@SUBJECT@> rdfs:label ?slabel.
+			<@SUBJECT@> rdfs:label ?label.
 			<@SUBJECT@> elmo:style ?style.
 			<@SUBJECT@> html:img ?img.
 			<@SUBJECT@> ?p ?o.
@@ -125,7 +129,7 @@ stage:Concept_graph a elmo:Part;
 		WHERE {
 			graph <http://linkeddata.ordina.nl/schooltaal/container/data> {
 				{
-					<@SUBJECT@> rdfs:label ?slabel.
+					<@SUBJECT@> rdfs:label ?label.
 					<@SUBJECT@> a ?style.
 					OPTIONAL {
 						<@SUBJECT@> foaf:depiction ?img
