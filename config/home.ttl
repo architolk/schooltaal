@@ -33,7 +33,7 @@ stage:Welkom a elmo:Part;
 				<h2>Schooltaal voor ICT ouders</h2>
 				<p>Waar hebben die kinderen het toch over? Wat is in hemelsnaam een <a href="/schooltaal/begrip/id/Hakwoord">hakwoord</a>? En wat is nu een <a href="/schooltaal/begrip/id/Luchtwoord">categorie 3</a> woord?</p>
 				<p>Dat dachten wij ouders van <a href="https://www.ordina.nl/diensten/semantic-data-management">Ordina Semantic Data Management</a> ook. Hoe handig zou het zijn om onze eigen aanpak hierop los te laten? Want juist <a href="https://www.ordina.nl/diensten/semantic-data-management">Semantic Data Management</a> gaat over de betekenis van woorden!</p>
-				<p>Daarom deze site. Hier kunt u alles vinden waar uw kinderen het over hebben.</p>
+				<p>Daarom deze site. Hier kunt u alles vinden waar uw kinderen het over hebben tijdens taal & spelling.</p>
 				<div class="alert alert-info" role="alert">
 
 					<form style="display:block;" method="get" action="/schooltaal/query/search">
