@@ -9,13 +9,28 @@
 stage:Forms	a	elmo:Representation;
 	elmo:url-pattern	"/query/categories$";
 	elmo:contains	stage:Menu;
+	elmo:fragment [
+		elmo:applies-to "notation";
+		rdfs:label "Nummer";
+	];
+	elmo:fragment [
+		elmo:applies-to "begrip";
+		rdfs:label "Categorie";
+	];
+	elmo:fragment [
+		elmo:applies-to "def";
+		rdfs:label "Uitleg";
+	];
 	elmo:query '''
-		select ?notation ?begrip ?begrip_label
+		select ?notation ?begrip ?begrip_label ?def
 		where {
 			graph <http://localhost:8080/schooltaal/container/data> {
 				?begrip a skos:Concept.
 				?begrip rdfs:label ?begrip_label.
 				?begrip skos:notation ?notation.
+				OPTIONAL {
+					?begrip skos:definition ?def
+				}
 			}
 		}
 		order by ?notation

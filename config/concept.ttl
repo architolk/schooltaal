@@ -49,14 +49,19 @@ stage:Concept_content a elmo:Part;
 		elmo:index "02";
 	];
 	elmo:fragment [
+		elmo:applies-to skos:scopeNote;
+		rdfs:label "Toelichting";
+		elmo:index "03";
+	];
+	elmo:fragment [
 		elmo:applies-to skos:example;
 		rdfs:label "Voorbeeld";
-		elmo:index "03";
+		elmo:index "04";
 	];
 	elmo:fragment [
 		elmo:applies-to skos:broader;
 		rdfs:label "Algemener begrip";
-		elmo:index "04";
+		elmo:index "05";
 	];
 	elmo:query '''
 		CONSTRUCT {

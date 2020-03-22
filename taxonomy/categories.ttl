@@ -35,7 +35,7 @@ begrip:Zingwoord a skos:Concept;
   skos:notation "02";
   skos:definition "Een zingwoord is een woord met een NG klank";
   skos:broader begrip:Woord;
-  skos:example ""
+  foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat02.png";
 .
 
 begrip:Luchtwoord a skos:Concept;
@@ -45,4 +45,5 @@ begrip:Luchtwoord a skos:Concept;
   skos:notation "03";
   skos:definition "Een luchtwoord is een woord met een korte klank gevolgd door CH, zoals in 'lucht'.";
   skos:scopeNote "Uitzonderingen: ligt, legt, zegt";
+  foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat03.png";
 .
