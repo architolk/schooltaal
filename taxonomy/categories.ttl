@@ -72,7 +72,7 @@ begrip:Plankwoord a skos:Concept;
   skos:prefLabel "Plankwoord";
   skos:altLabel "Categorie 4 woord";
   skos:notation "04";
-  skos:definition "Een plankwoord is een woord met een NK klank die je uitspreekt met een G, zonder dat er een G tussen zit";
+  skos:definition "Een plankwoord is een woord met een NK klank die je uitspreekt als NGK, zonder dat je er een G tussen schrijft";
   skos:broader begrip:Woord;
   foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat04.png";
 .
