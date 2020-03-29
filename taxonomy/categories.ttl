@@ -77,6 +77,7 @@ begrip:Plankwoord a skos:Concept;
   skos:definition "Een plankwoord is een woord met een NK klank die je uitspreekt als NGK, zonder dat je er een G tussen schrijft";
   skos:broader begrip:Woord;
   foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat04.png";
+  skos:example ex:woninkje, ex:palinkje; #Ook een verkleinwoord
   skos:example ex:bank, ex:stinken, ex:enkel, ex:klinker, ex:dankuwel, ex:denk, ex:buiginkje, ex:kronkel, ex:vonk;
 .
  ex:bank a skosxl:Label; rdfs:label "bank".
@@ -97,7 +98,18 @@ begrip:EerOorEurWoord a skos:Concept;
   skos:definition "Een eer-oor-eur-woord is een woord dat je schrijft met ee(r), oo(r), eur(r) of ee(l)";
   skos:broader begrip:Woord;
   foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat05.png";
+  skos:example ex:peer, ex:heerlijk, ex:voorbij, ex:kleuren, ex:veertig, ex:poort, ex:koor, ex:geur, ex:veel, ex:speel;
 .
+ex:peer a skosxl:Label; rdfs:label "peer".
+ex:heerlijk a skosxl:Label; rdfs:label "heerlijk".
+ex:voorbij a skosxl:Label; rdfs:label "voorbij".
+ex:kleuren a skosxl:Label; rdfs:label "kleuren".
+ex:veertig a skosxl:Label; rdfs:label "veertig".
+ex:poort a skosxl:Label; rdfs:label "poort".
+ex:koor a skosxl:Label; rdfs:label "koor".
+ex:geur a skosxl:Label; rdfs:label "geur".
+ex:veel a skosxl:Label; rdfs:label "veel".
+ex:speel a skosxl:Label; rdfs:label "speel".
 
 begrip:AaiOoiOeiWoord a skos:Concept;
   rdfs:label "aai-ooi-oei-Woord";
@@ -107,7 +119,17 @@ begrip:AaiOoiOeiWoord a skos:Concept;
   skos:definition "Een aai-ooi-oei-woord is een woord waarin je een J hoort, terwijl je een I schrijft";
   skos:broader begrip:Woord;
   foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat06.png";
+  skos:example ex:moeite, ex:grasmaaier, ex:dooi, ex:strooien, ex:haai, ex:knoeien, ex:saai, ex:draaien, ex:groeien;
 .
+ex:moeite a skosxl:Label; rdfs:label "moeite".
+ex:grasmaaier a skosxl:Label; rdfs:label "grasmaaier".
+ex:dooi a skosxl:Label; rdfs:label "dooi".
+ex:strooien a skosxl:Label; rdfs:label "strooien".
+ex:haai a skosxl:Label; rdfs:label "haai".
+ex:knoeien a skosxl:Label; rdfs:label "knoeien".
+ex:saai a skosxl:Label; rdfs:label "saai".
+ex:draaien a skosxl:Label; rdfs:label "draaien".
+ex:groeien a skosxl:Label; rdfs:label "groeien".
 
 begrip:EeuwIeuwWoord a skos:Concept;
   rdfs:label "eeuw-ieuw-Woord";
@@ -117,7 +139,17 @@ begrip:EeuwIeuwWoord a skos:Concept;
   skos:definition "Een eeuw-ieuw-Woord id een woord met een EE of IE klank met daarna een W en je een U voor de W schrijft";
   skos:broader begrip:Woord;
   foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat07.png";
+  skos:example ex:sneeuw, ex:nieuw, ex:eeuw, ex:leeuw, ex:schreeuwen, ex:geeuwen, ex:kieuw, ex:spreeuw, ex:meeuw;
 .
+ex:sneeuw a skosxl:Label; rdfs:label "sneeuw".
+ex:nieuw a skosxl:Label; rdfs:label "nieuw".
+ex:eeuw a skosxl:Label; rdfs:label "eeuw".
+ex:leeuw a skosxl:Label; rdfs:label "leeuw".
+ex:schreeuwen a skosxl:Label; rdfs:label "schreeuwen".
+ex:geeuwen a skosxl:Label; rdfs:label "geeuwen".
+ex:kieuw a skosxl:Label; rdfs:label "kieuw".
+ex:spreeuw a skosxl:Label; rdfs:label "spreeuw".
+ex:meeuw a skosxl:Label; rdfs:label "meeuw".
 
 begrip:LangermaakWoord a skos:Concept;
   rdfs:label "Langermaak-woord";
@@ -128,17 +160,33 @@ begrip:LangermaakWoord a skos:Concept;
   skos:scopeNote "Langermaken kan door er EN achter te plakken: het meervoud. Ook woorden waarbij je een P hoort, kun je zo langer maken om er achter te komen of je een P of B schrijft";
   skos:broader begrip:Woord;
   foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat08.png";
+  skos:example ex:mand, ex:hond, ex:straat, ex:kaart, ex:plant, ex:koord, ex:poort, ex:paard, ex:heb, ex:stap, ex:had, ex:krab;
 .
+ex:mand a skosxl:Label; rdfs:label "mand".
+ex:hond a skosxl:Label; rdfs:label "hond".
+ex:straat a skosxl:Label; rdfs:label "straat".
+ex:kaart a skosxl:Label; rdfs:label "kaart".
+ex:plant a skosxl:Label; rdfs:label "plant".
+ex:koord a skosxl:Label; rdfs:label "koord".
+ex:poort a skosxl:Label; rdfs:label "poort".
+ex:paard a skosxl:Label; rdfs:label "paard".
+ex:heb a skosxl:Label; rdfs:label "heb".
+ex:stap a skosxl:Label; rdfs:label "stap".
+ex:had a skosxl:Label; rdfs:label "had".
+ex:krab a skosxl:Label; rdfs:label "krab".
+
 begrip:DTLangermaakWoord a skos:Concept;
   rdfs:label "DT-Langermaak-woord";
   skos:prefLabel "DT-Langermaak-woord";
   skos:definition" Een DT-Langermaak-woord is een langermaak-woord waarbij je op het eind een T hoort";
   skos:broader begrip:LangermaakWoord;
+  skos:example ex:mand, ex:hond, ex:straat, ex:kaart, ex:plant, ex:koord, ex:poort, ex:paard, ex:had;
 .
 begrip:BPLangermaakWoord a skos:Concept;
   rdfs:label "BP-Langermaak-woord";
   skos:definition "Een BP-Langermaak-woord is een langermaak-woord waarbij je op het eind een P hoort";
   skos:broader begrip:LangermaakWoord;
+  skos:example ex:heb, ex:stap, ex:krab;
 .
 
 begrip:Voorvoegsel a skos:Concept;
@@ -150,7 +198,19 @@ begrip:Voorvoegsel a skos:Concept;
   skos:scopeNote "De U is een korte klank, en spreek je uit zoals in BUS";
   skos:broader begrip:Woord;
   foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat09.png";
+  skos:example ex:verstand, ex:bedenken, ex:beleg, ex:verkopen, ex:geluk, ex:gelach, ex:bekende, ex:verkeer, ex:verstoppen, ex:beleid, ex:gedaante;
 .
+ex:verstand a skosxl:Label; rdfs:label "verstand".
+ex:bedenken a skosxl:Label; rdfs:label "bedenken".
+ex:beleg a skosxl:Label; rdfs:label "beleg".
+ex:verkopen a skosxl:Label; rdfs:label "verkopen".
+ex:geluk a skosxl:Label; rdfs:label "geluk".
+ex:gelach a skosxl:Label; rdfs:label "gelach".
+ex:bekende a skosxl:Label; rdfs:label "bekende".
+ex:verkeer a skosxl:Label; rdfs:label "verkeer".
+ex:verstoppen a skosxl:Label; rdfs:label "verstoppen".
+ex:beleid a skosxl:Label; rdfs:label "beleid".
+ex:gedaante a skosxl:Label; rdfs:label "gedaante".
 
 begrip:Klankgroepenwoord a skos:Concept;
   rdfs:label "Klankgroepenwoord";
@@ -163,6 +223,11 @@ begrip:Klankgroepenwoord a skos:Concept;
   foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat10.png";
   skos:example ex:molen, ex:korrel, ex:buiten, ex:kasteel;
 .
+ex:molen a skosxl:Label; rdfs:label "molen".
+ex:korrel a skosxl:Label; rdfs:label "korrel".
+ex:buiten a skosxl:Label; rdfs:label "buiten".
+ex:kasteel a skosxl:Label; rdfs:label "kasteel".
+
 begrip:LangeKlankgroepenwoord a skos:Concept;
   rdfs:label "Lange klank-groepenwoord";
   rdfs:prefLabel "Lange klank";
@@ -171,7 +236,6 @@ begrip:LangeKlankgroepenwoord a skos:Concept;
   skos:broader begrip:Klankgroepenwoord;
   skos:example ex:molen;
 .
-ex:molen a skosxl:Label; rdfs:label "molen".
 begrip:KorteKlankgroepenwoord a skos:Concept;
   rdfs:label "Korte klank-groepenwoord";
   rdfs:prefLabel "Korte klank";
@@ -180,7 +244,6 @@ begrip:KorteKlankgroepenwoord a skos:Concept;
   skos:broader begrip:Klankgroepenwoord;
   skos:example ex:korrel;
 .
-ex:korrel a skosxl:Label; rdfs:label "korrel".
 begrip:TweetekenklankGroepenwoord a skos:Concept;
   rdfs:label "Tweetekenklank-groepenwoord";
   rdfs:prefLabel "Tweetekenklank";
@@ -190,7 +253,6 @@ begrip:TweetekenklankGroepenwoord a skos:Concept;
   skos:related begrip:Tweetekenklank;
   skos:example ex:buiten;
 .
-ex:buiten a skosxl:Label; rdfs:label "buiten".
 begrip:MedeklinkerKlankgroepenwoord a skos:Concept;
   rdfs:label "Medeklinker-klankgroepenwoord";
   rdfs:prefLabel "Medeklinker";
@@ -199,7 +261,6 @@ begrip:MedeklinkerKlankgroepenwoord a skos:Concept;
   skos:broader begrip:Klankgroepenwoord;
   skos:example ex:kasteel;
 .
-ex:kasteel a skosxl:Label; rdfs:label "kasteel".
 begrip:Tweetekenklank a skos:Concept;
   rdfs:label "Tweetekenklank";
   skos:prefLabel "Tweetekenklank";
@@ -225,8 +286,20 @@ begrip:Verkleinwoorden a skos:Concept;
   skos:scopeNote "Bij een verkleinwoord hoor je op het eind JE, TJE of PJE";
   skos:broader begrip:Woord;
   foaf:depiction "https://raw.githubusercontent.com/architolk/schooltaal/master/media/cat11.png";
-  skos:example ex:buiginkje
+  skos:example ex:tangetje; #Ook een zingwoord;
+  skos:example ex:buiginkje; #Ook een plankwoord;
+  skos:example ex:kusje, ex:boompje, ex:stoeltje, ex:clubje, ex:balletje, ex:autootje, ex:woninkje, ex:palinkje, ex:parapluutje, ex:cameraatje
 .
+ex:kusje a skosxl:Label; rdfs:label "kusje".
+ex:boompje a skosxl:Label; rdfs:label "boompje".
+ex:stoeltje a skosxl:Label; rdfs:label "stoeltje".
+ex:clubje a skosxl:Label; rdfs:label "clubje".
+ex:balletje a skosxl:Label; rdfs:label "balletje".
+ex:autootje a skosxl:Label; rdfs:label "autootje".
+ex:woninkje a skosxl:Label; rdfs:label "woninkje".
+ex:palinkje a skosxl:Label; rdfs:label "palinkje".
+ex:parapluutje a skosxl:Label; rdfs:label "parapluutje".
+ex:cameraatje a skosxl:Label; rdfs:label "cameraatje".
 
 begrip:Achtervoegsel a skos:Concept;
   rdfs:label "Achtervoegsel";
