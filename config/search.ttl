@@ -24,15 +24,27 @@ stage:Search	a	elmo:Representation;
     rdfs:label "Zoekvraag";
   ];
 	elmo:query '''
-		select ?type ?s ?s_label ?def ("@TERM@" as ?search)
+		select ?type ?s (if(bound(?altlabel),concat(?label," (",?altlabel,")"),?label) as ?s_label) ?def ("@TERM@" as ?search)
 		where {
 			graph <http://linkeddata.ordina.nl/schooltaal/container/data> {
-				?s a ?type.
-				?s rdfs:label ?s_label.
-				OPTIONAL {
-					?s skos:definition ?def
+				{
+					?s a ?type.
+					?s rdfs:label ?label.
+					OPTIONAL {
+						?s skos:definition ?def
+					}
+					FILTER regex(?label,"@TERM@","i")
 				}
-				FILTER regex(?s_label,"@TERM@","i")
+				UNION
+				{
+					?s a ?type.
+					?s skos:altLabel ?altlabel.
+					?s rdfs:label ?label
+					OPTIONAL {
+						?s skos:definition ?def
+					}
+					FILTER regex(?altlabel,"@TERM@","i")
+				}
       }
 		}
 		order by ?s_label
