@@ -38,7 +38,7 @@ stage:Welkom a elmo:Part;
 				<div class="alert alert-info" role="alert">
 
 					<form style="display:block;" method="get" action="/schooltaal/query/search">
-						<label for="zoeken">Klik op <a href="/schooltaal/query/categories">Categoriën</a>, of gebruik de zoekfunctie:</label>
+						<label for="zoeken">Klik op <a href="/schooltaal/query/categories">Categorieën</a>, of gebruik de zoekfunctie:</label>
 						<div class="input-group" style="max-width: 300px">
 							<input id="zoeken" class="form-control" type="text" placeholder="Zoek een woord" name="term"/>
 							<span class="input-group-btn">
